@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from www.dripform.id/all-feature/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Jun 2025 04:35:52 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <script>
+      const setDarkMode = () => {
+        if (
+          localStorage.darkMode === "true" ||
+          (!("darkMode" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+          localStorage.darkMode = "true";
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.darkMode = "false";
+        }
+      };
+
+      setDarkMode();
+      // Runs on view transitions navigation
+      document.addEventListener("astro:after-swap", setDarkMode);
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed"
+      href="rss.html"
+    />
+    <title>Dripform | Memudahkan Jualan dan Mengelola Pelanggan</title>
+    <meta
+      name="title"
+      content="Dripform | Memudahkan Jualan dan Mengelola Pelanggan"
+    />
+    <meta name="description" content="Extra Ordinary Form Builder" />
+    <!-- Open Graph Tags (Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dripform | Memudahkan Jualan dan Mengelola Pelanggan"
+    />
+    <meta property="og:url" content="https://dripform.id/all-feature/" />
+    <meta property="og:description" content="Extra Ordinary Form Builder" />
+    <meta
+      property="og:image"
+      content="https://dripform.id/all-feature/thumbnail.jpg"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Dripform | Memudahkan Jualan dan Mengelola Pelanggan"
+    />
+    <meta property="twitter:url" content="https://dripform.id/all-feature/" />
+    <meta
+      property="twitter:description"
+      content="Extra Ordinary Form Builder"
+    />
+    <meta property="twitter:image" content="./thumbnail.jpg" />
+    <link
+      rel="preload"
+      href="../fonts/inter-v12-latin_latin-ext-regular.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/inter-v12-latin_latin-ext-700.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/space-grotesk-v15-latin_latin-ext-regular.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/space-grotesk-v15-latin_latin-ext-600.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/space-grotesk-v15-latin_latin-ext-700.woff2"
+      as="font"
+      crossorigin
+    />
+    <meta name="astro-view-transitions-enabled" content="true" />
+    <meta name="astro-view-transitions-fallback" content="animate" />
+    <link rel="stylesheet" href="../_astro/_slug_.59a1791f.css" />
+    <style>
+      .astro-route-announcer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+      }
+      :root {
+        --gradient-space: 20px;
+        --gradient-height: 2px;
+      }
+      @font-face {
+        font-display: swap;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        src: url(../fonts/inter-v12-latin_latin-ext-regular.woff2)
+          format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        src: url(../fonts/inter-v12-latin_latin-ext-700.woff2) format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: 400;
+        src: url(../fonts/space-grotesk-v15-latin_latin-ext-regular.woff2)
+          format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: 600;
+        src: url(../fonts/space-grotesk-v15-latin_latin-ext-600.woff2)
+          format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: 700;
+        src: url(../fonts/space-grotesk-v15-latin_latin-ext-700.woff2)
+          format("woff2");
+      }
+      .gradient-line {
+        background-image: linear-gradient(
+            90deg,
+            transparent,
+            transparent 50%,
+            #f9fafb 50%,
+            #f9fafb 100%
+          ),
+          linear-gradient(90deg, #c026d3, #db2777);
+        background-size: var(--gradient-space) var(--gradient-height),
+          100% var(--gradient-height);
+        border-radius: 9999px;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.3s;
+      }
+      .dark .gradient-line {
+        background-image: linear-gradient(
+            90deg,
+            transparent,
+            transparent 50%,
+            #111827 50%,
+            #111827 100%
+          ),
+          linear-gradient(90deg, #c026d3, #db2777);
+        background-size: var(--gradient-space) var(--gradient-height),
+          100% var(--gradient-height);
+        border-radius: 9999px;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.3s;
+      }
+      .gradient-underline {
+        line-height: 0.6em;
+        vertical-align: 0em;
+        border-bottom: 0.27em solid transparent;
+        -o-border-image: linear-gradient(to right, #c026d3 0%, #db2777 100%);
+        border-image: linear-gradient(to right, #c026d3 0%, #db2777 100%);
+        border-image-slice: 1;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.3s;
+      }
+      .gradient-underline span {
+        vertical-align: -0.38em;
+      }
+      .image-shine {
+        -webkit-mask: linear-gradient(135deg, #000c 20%, #000, #000c 80%) 100%
+          100%/250% 250%;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.3s;
+      }
+      .image-shine:hover {
+        -webkit-mask-position: 0 0;
+      }
+      html {
+        scrollbar-color: #c026d3 transparent;
+        scrollbar-width: auto;
+      }
+      body::-webkit-scrollbar {
+        width: 14px;
+      }
+      body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px #0000004d;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(180deg, #c026d3, #db2777);
+        outline: 0px solid #db2777;
+        border-radius: 10px;
+      }
+    </style>
+    <script type="module" src="../_astro/hoisted.35eb430d.js"></script>
+  </head>
+  <body
+    class="font-drip-inter transition-all duration-300 bg-white dark:bg-drip-dark"
+  >
+    <section
+      class="w-full px-4 md:px-3 lg:px-2 py-5 sticky top-0 z-30 bg-drip-white dark:bg-drip-dark shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="logo flex-none max-w-xs z-40">
+          <a href="../"
+            ><img
+              src="../_astro/dripform-logo.7ca17c95.svg"
+              width="150"
+              height="116.2"
+              alt="Logo Dripform"
+          /></a>
+        </div>
+        <div
+          class="navigation hidden absolute top-0 left-0 w-full bg-drip-white dark:bg-drip-dark transition-all duration-300 p-7 border-b border-gray-200 pt-[112px] shadow-2xl"
+          id="navigation_wrapper"
+        >
+          <nav>
+            <ul
+              class="list-none text-[17px] font-normal flex flex-initial flex-col md:flex-row gap-5"
+            >
+              <li>
+                <a
+                  href="../"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Feature</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pricing/"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../syarat-dan-ketentuan/"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Syarat dan Ketentuan</a
+                >
+              </li>
+              <!-- <li>
+      <a
+        href="/demo"
+        class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+        >Demo</a
+      >
+    </li> -->
+              <!-- <li>
+      <a
+        href="/blog"
+        class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+        >Usecase</a
+      >
+    </li> -->
+            </ul>
+          </nav>
+          <button
+            class="mt-6 bg-fuchsia-700 text-white button-text items-center whitespace-nowrap rounded-full transition-all duration-300 px-5 py-2 text-md block w-full"
+          >
+            <a href="https://portal.dripform.id/login"> Login App</a>
+          </button>
+        </div>
+        <div class="navigation hidden md:block">
+          <nav>
+            <ul
+              class="list-none text-[17px] font-normal flex flex-initial flex-col md:flex-row gap-5"
+            >
+              <li>
+                <a
+                  href="../"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Feature</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pricing/"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../syarat-dan-ketentuan/"
+                  class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+                  >Syarat dan Ketentuan</a
+                >
+              </li>
+              <!-- <li>
+      <a
+        href="/demo"
+        class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+        >Demo</a
+      >
+    </li> -->
+              <!-- <li>
+      <a
+        href="/blog"
+        class="opacity-60 text-drip-primary hover:opacity-100 hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+        >Usecase</a
+      >
+    </li> -->
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="relative flex flex-initial flex-row items-center gap-5 z-30"
+        >
+          <button id="mode_switcher" class="group" title="Switch mode">
+            <svg
+              height="512"
+              viewBox="0 0 24 24"
+              width="512"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-auto fill-drip-secondary transition-all duration-300 hover:fill-drip-accent dark:fill-white dark:hover:fill-drip-accent"
+            >
+              <path
+                d="m12 18a6 6 0 1 1 6-6 6 6 0 0 1 -6 6zm0-10a4 4 0 1 0 4 4 4 4 0 0 0 -4-4z"
+              ></path>
+              <path
+                d="m12 15a1 1 0 0 1 -1-1v-4a1 1 0 0 1 1-1 3 3 0 0 1 0 6z"
+              ></path>
+              <path
+                d="m12 5a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"
+              ></path>
+              <path
+                d="m17.66 7.34a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29z"
+              ></path>
+              <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path>
+              <path
+                d="m18.36 19.36a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+              ></path>
+              <path
+                d="m12 22a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"
+              ></path>
+              <path
+                d="m5.64 19.36a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24z"
+              ></path>
+              <path d="m4 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path>
+              <path
+                d="m6.34 7.34a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="menu_toggle"
+            class="block md:hidden text-white"
+            type="button"
+            aria-controls="navbar-main"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-auto fill-drip-dark stroke-drip-dark transition-all duration-300 hover:fill-drip-accent hover:stroke-drip-accent dark:fill-drip-accent dark:stroke-drip-accent dark:hover:fill-drip-secondary dark:hover:stroke-drip-secondary"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="hidden bg-fuchsia-700 text-white button-text items-center whitespace-nowrap rounded-full transition-all duration-300 px-5 py-2 text-md md:block w-full"
+          >
+            <a href="https://portal.dripform.id/login"> Login App</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="overflow-hidden bg-white dark:bg-drip-dark py-0 lg:py-8 transition-all duration-300"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <!-- Feature Detail 1 -->
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:gap-y-16 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 my-16"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-fuchsia-600">
+                Landing Page Builder
+              </h2>
+              <p
+                class="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-3xl"
+              >
+                Bikin Landing Page Tanpa Domain & Hosting
+              </p>
+              <p
+                class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-50"
+              >
+                Untuk yang ingin punya landing page untuk jualan tapi nggak ada
+                modal dan nggak mau ribet mengurus domain dan hosting..
+              </p>
+              <!-- List -->
+              <ul role="list" class="pt-2 my-2 space-y-5">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Drag n Drop :</span> tinggal
+                    geser-geser aja</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold"> User Friendly :</span> mudah banget
+                    digunakan</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Lightspeed :</span> loading landing
+                    page supercepat</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Custom domain :</span> bisa pakai
+                    domain sendiri
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="m-auto lg:inline-flex w-full lg:order-2 order-first block"
+          >
+            <img
+              src="../_astro/featured.54eb72e7.jpg"
+              width="4480"
+              height="400"
+              alt="WhatsApp Notification"
+              class="m-auto lg:ml-0 rounded-md shadow-md"
+            />
+          </div>
+        </div>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        <!-- Feature Detail 2 -->
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:gap-y-16 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 my-16"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-fuchsia-600">
+                Customer Relationship Management
+              </h2>
+              <p
+                class="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-3xl"
+              >
+                Kelola Pelanggan Dalam Satu Dashboard Saja
+              </p>
+              <p
+                class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-50"
+              >
+                Mau list building, jualan, hingga pengelolaan data pelanggan
+                cukup dalam satu aplikasi Dripform saja
+              </p>
+              <!-- List -->
+              <ul role="list" class="pt-2 my-2 space-y-5">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Form Builder :</span> bisa bikin
+                    form apa aja</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold"> Autosave Lead :</span> simpan data
+                    lead otomatis</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Ecommerce :</span> kelola produk dan
+                    order</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">CRM :</span> bisa mengelola data
+                    pelanggan
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="m-auto lg:inline-flex w-full lg:order-2 order-first block"
+          >
+            <img
+              src="../_astro/featured.54eb72e7.jpg"
+              width="4480"
+              height="400"
+              alt="WhatsApp Notification"
+              class="m-auto lg:ml-0 rounded-md shadow-md"
+            />
+          </div>
+        </div>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        <!-- Feature Detail 3 -->
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:gap-y-16 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 my-16"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-fuchsia-600">
+                Auto Follow Up
+              </h2>
+              <p
+                class="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-3xl"
+              >
+                Include Tools WhatsApp Marketing
+              </p>
+              <p
+                class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-50"
+              >
+                Tidak perlu berlangganan aplikasi WhatsApp marketing apapun,
+                Dripform sudah menyediakan integrasi WhatsApp sendiri
+              </p>
+              <ul role="list" class="pt-2 my-2 space-y-5">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Autoresponse :</span> kirim otomatis
+                    opening notifikasi</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold"> Follow-Up :</span> kirim otomatis
+                    pesan follow up</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">List Building :</span> bangun
+                    database WhatsApp pelanggan</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Bot WhatsApp :</span> bikin
+                    unlimited bot WhatsApp
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="m-auto lg:inline-flex w-full lg:order-2 order-first block"
+          >
+            <img
+              src="../_astro/featured.54eb72e7.jpg"
+              width="4480"
+              height="400"
+              alt="WhatsApp Notification"
+              class="m-auto lg:ml-0 rounded-md shadow-md"
+            />
+          </div>
+        </div>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        <!-- Feature Detail 4 -->
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:gap-y-16 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 my-16"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-fuchsia-600">
+                Shipping Cost System
+              </h2>
+              <p
+                class="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-3xl"
+              >
+                Terintegrasi Dengan Berbagai Ekspedisi
+              </p>
+              <p
+                class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-50"
+              >
+                Jualan makin mudah dengan adanya integrasi Dripform dengan
+                berbagai ekspedisi pengiriman di Indonesia
+              </p>
+              <!-- List -->
+              <ul role="list" class="pt-2 my-2 space-y-5">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">API Integration :</span> Raja Ongkir
+                    dan Juragan COD</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold"> Multi Expedition :</span> ada 24
+                    kurir ekspedisi Indonesia</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Automation :</span> perhitungan
+                    ongkir otomatis</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-fuchsia-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+                  >
+                    <span class="font-bold">Support COD :</span> Ada pilihan
+                    ongkir COD</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="m-auto lg:inline-flex w-full lg:order-2 order-first block"
+          >
+            <img
+              src="../_astro/featured.54eb72e7.jpg"
+              width="4480"
+              height="400"
+              alt="WhatsApp Notification"
+              class="m-auto lg:ml-0 rounded-md shadow-md"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="w-full h-[1px] overflow-hidden gradient-line"></div>
+    <div
+      class="py-6 transition-all duration-300 bg-gradient-to-r from-drip-secondary/10 to-drip-accent/10 dark:bg-gradient-to-r dark:from-drip-accent/[2%] dark:to-drip-secondary/[5%]"
+    >
+      <footer
+        class="container mx-auto max-w-screen-xl flex flex-initial lg:flex-row flex-col gap-4 items-center px-7"
+      >
+        <div class="logo flex-none">
+          <a
+            href="../"
+            class="font-bold font-drip-space text-lg hover:text-drip-accent transition-all duration-300 dark:text-white dark:hover:text-drip-accent"
+            >PT. Drip Rintisan Inovasi Perkasa</a
+          >
+        </div>
+        <!-- <ul class="list-none text-[14px] font-normal flex flex-initial flex-row content-center items-center gap-x-[35px]">
+            <SocialIcon socialUrl={config?.social?.dribbble} socialType="dribbble" />
+
+            <SocialIcon socialUrl={config?.social?.facebook} socialType="facebook" />
+
+            <SocialIcon socialUrl={config?.social?.github} socialType="github" />
+
+            <SocialIcon socialUrl={config?.social?.instagram} socialType="instagram" />
+
+            <SocialIcon socialUrl={config?.social?.mastodon} socialType="mastodon" />
+
+            <SocialIcon socialUrl={config?.social?.pinterest} socialType="pinterest" />
+
+            <SocialIcon socialUrl={config?.social?.skype} socialType="skype" />
+
+            <SocialIcon socialUrl={config?.social?.twitter} socialType="twitter" />
+        </ul> -->
+        <div class="grow lg:text-right">
+          <span
+            class="text-[14px] text-drip-dark/40 transition-all duration-300 dark:text-drip-white/40"
+          >
+            made with <span class="text-drip-accent">&hearts;</span> by
+            <a
+              href="../"
+              target="_blank"
+              class="transition-all duration-300 text-drip-dark/60 dark:text-drip-white/60 hover:text-drip-accent"
+              >Drip Lab</a
+            >
+          </span>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- Mirrored from www.dripform.id/all-feature/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Jun 2025 04:35:54 GMT -->
+</html>
